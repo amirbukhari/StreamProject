@@ -1,0 +1,101 @@
+nav img {
+	width:15%;
+	margin-left:10px;
+}
+#loginpage{
+	background: linear-gradient(
+		rgba(255,255,255,0.1), 
+		rgba(195,238,217,0.4)
+	  ),url(../images/background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#myTasks{
+	background-color:#D8E6EB;
+	height:100%;
+}
+#top {
+	margin-top:4em;
+}
+.tasks h2
+{
+ margin-left :2em;
+ color:green;
+}
+.tasks label
+{
+ margin-left :6em;
+}
+#myTasksProfile {
+	text-align:center;
+}
+
+#myTasksProfile p {
+	margin-top:1em;
+}
+#notifications
+{
+	height:400px;
+	overflow:scroll;
+	background-color:#e6e7eb;
+}
+#notifications h3
+{
+	text-decoration:underline;
+	padding-top:0.2em;
+}
+#notifications p
+{
+	text-align:left;
+}
+#notificationFirst
+{
+	border-top: 2px solid lightgrey;
+}
+#profile
+{
+	padding-top:5%;
+	width:80%;
+	margin:0 auto;
+}
+.friendrow
+{
+margin-top:2em;
+
+}
+.friend img
+{
+	width:30%;
+	vertical-align:middle;
+	display:inline;
+}
+.friend p
+{
+	display:inline;
+}
+
+.notificationAddedTask
+{
+	padding:1em 0.5em;
+	overflow:hidden;
+	border-bottom: 2px solid lightgrey;
+}
+.vertical-center{
+    position: fixed;
+    top: 50%;
+	left:50%;
+	-webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+	
+}
+.vertical-center-row{
+    position: absolute;
+    top: 50%;
+	-webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+	
+}

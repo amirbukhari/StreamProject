@@ -1,0 +1,85 @@
+body{
+background:url('../Images/WolfSticker5.png') no-repeat center center fixed lightgrey;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+font-family:'Lato';
+}
+nav{
+width:500px;
+margin: 0 auto;
+font-weight:700;
+}
+nav a{
+color:white;
+text-decoration:none;
+}
+nav a:hover{
+	color:#6c98aa;
+}
+nav ul{
+	margin: 0 auto;
+	padding: 0;
+	list-style-type: none;
+	text-align:center;
+}
+nav li{
+	display:inline-block;
+	font-size:1.45em;
+	padding:0px 15px;
+	background:black;
+}
+nav img{
+width:100%;
+}
+
+#container{
+	width:740px;
+	margin:0 auto;
+	margin-top:1em;
+	text-align:center;
+	background:rgba(255,255,255,0.5);
+	overflow: hidden;
+	border: solid 3px;
+}
+#container h2{
+	text-decoration:underline;
+}
+#container a{
+	color:#6c98aa;
+}
+#show{
+	width:100%;
+	margin: 0 auto;
+	margin-bottom:2em;
+}
+#show h3{
+	padding:0px;
+	margin:0px;
+}
+#show h4{
+	padding:0px;
+	margin:0px;
+}
+
+#show td{
+	width:50%;
+	border:solid 1px;
+}
+#show th{
+	width:50%;
+	background:black;
+	color:white;
+}
+#show th:hover{
+	background:black;
+}
+#show tr{
+	background:rgba(0,0,0,0.5);
+}
+#show tr:hover {
+	background:rgba(0,0,0,0.0);
+}
+
+
