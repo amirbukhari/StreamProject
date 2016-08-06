@@ -29,6 +29,7 @@ function getContent(timestamp)
 				//$('#shit').html(count + ' ' + obj.timestamp);
 				
                 getContent(obj.timestamp);
+				updateScroll();
             }
         }
     );
@@ -36,7 +37,7 @@ function getContent(timestamp)
 function insertMessage()
 {
 		var newMessage=$("#newMessage").val();
-		var name="AmirONLINE";
+		var name=$("#userName").val();
 		var room=1;
 		if(newMessage!="" && name!="")
 		{
@@ -48,13 +49,18 @@ function insertMessage()
 			},
 			function(response)
 			{
-				alert(response);
+				$("#newMessage").val('');
 			});
 			
 		}else
 		{
 			alert("Please enter the correct information");
 		}
+}
+
+function updateScroll(){
+    var element = document.getElementById("table");
+    element.scrollTop = element.scrollHeight;
 }
 // initialize jQuery
 $(function() {
@@ -75,7 +81,7 @@ $(function() {
 	$('#newMessage').click(function()
 	{
 	//alert($("#table").scrollTop());
-	$("#table").scrollTop(100);
+	updateScroll();
 	});
 
 

@@ -5,16 +5,8 @@ $result=$mysqli->query($sql);
 
 
 
-$table="<h2>Messages</h2>
-			<table>
-				<tr>
-					<th>
-						<h2>From</h2>
-					</th>
-					<th>
-						<h2>Message</h2>
-					</th>
-				</tr>";
+$table="
+			<table>";
 			
 
 
@@ -33,10 +25,10 @@ while($row = $result->fetch_array())
 	
 	$table.=" <tr>
 				<td>
-					<h3>$messageBy</h3>
+					<h6>$messageBy</h6>
 				</td>
 				<td
-					<h4>$message</h4>
+					<p>$message</p>
 				</td>
 			 </tr>";
 }
