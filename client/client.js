@@ -14,7 +14,7 @@ function getContent(timestamp)
     var queryString = {'timestamp' : timestamp};
 	
     $.ajax(
-        {
+	{
             type: 'GET',
             url: 'serverCode/server.php',
 			async : true,
@@ -37,5 +37,14 @@ function getContent(timestamp)
 // initialize jQuery
 $(function() {
     getContent();
-	
+
 });
+
+
+
+	
+	
+	
+	
+	
+	

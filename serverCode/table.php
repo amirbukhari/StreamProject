@@ -1,12 +1,12 @@
 <?php
 require "connect.php";
-$sql="SELECT * FROM MESSAGES WHERE roomID = 1";
+$sql="(SELECT * FROM MESSAGES WHERE roomID = 1 ORDER BY messageID DESC LIMIT 10) ORDER BY messageID ASC";
 $result=$mysqli->query($sql);
 
 
 
 $table="
-			<table>";
+			<div>";
 			
 
 
@@ -23,14 +23,12 @@ while($row = $result->fetch_array())
 	$messages[$count]=$messageDetails;
 	$count++;
 	
-	$table.=" <tr>
-				<td>
-					<h6>$messageBy</h6>
-				</td>
-				<td
-					<p>$message</p>
-				</td>
-			 </tr>";
+	$table.=" 
+				
+					<p class='messageBy'>$messageBy</p>
+				
+				
+					<p class='message'>$message</p>";
 }
 
 
@@ -43,7 +41,7 @@ for($i=0;$i<count($messages);++$i)
 }*/
 
 
-$table.="</table>";
+$table.="</div>";
 
 
 

@@ -5,9 +5,82 @@ background-color:#212121;
 
 #table
 {
-height: 300px;
-width: 250px; 
-font-size: 10px;
-overflow: auto;
-color:white;
+	color:white;
+}
+#table .message
+{
+	margin-left:20px;
+	margin-right:20px;
+	background-color:#4080ff;
+	border-radius: 25px;
+	padding:5px;
+	
+	word-wrap: break-word;
+}
+#table .messageBy
+{
+	margin-left:5px;
+	
+	
+}
+body{
+  background-color:#222;
+}
+#push{
+  position:fixed;
+  bottom:0px;
+  width:100%;
+}
+.chatbox{
+  width:260px;
+  background-color:#444;
+  float:right;
+  margin-right:2em;
+}
+.chatnav{
+   background-color:#4080ff;
+  height:30px;
+}
+.chatnav:hover{
+   background-color:orange;
+}
+.chatnav button
+{
+  float:right;
+  background-color:#666;
+  margin:5px;
+  border:none;
+  display:inline;
+}
+
+.chatnav p
+{
+  color:white;
+  padding:5px;
+ 
+}
+
+.messageArea{
+  height:300px;
+  overflow-y:scroll;
+  width:100%;
+}
+.messageAreaWrapper{
+  width:100%;
+}
+.convoName
+{
+  display:inline-block;
+  width:70%;
+}
+.darker{
+  background-color:#333;
+}
+.darker:hover{
+  background-color:#555;
+}
+
+textarea{
+  resize: none;
+  width:100%;
 }

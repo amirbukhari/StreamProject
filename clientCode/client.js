@@ -9,6 +9,7 @@
  * @param timestamp
  */
  //var count = 0;
+ var name="";
 function getContent(timestamp)
 {
     var queryString = {'timestamp' : timestamp};
@@ -37,7 +38,7 @@ function getContent(timestamp)
 function insertMessage()
 {
 		var newMessage=$("#newMessage").val();
-		var name=$("#userName").val();
+		
 		var room=1;
 		if(newMessage!="" && name!="")
 		{
@@ -65,7 +66,7 @@ function updateScroll(){
 // initialize jQuery
 $(function() {
     getContent();
-	
+	name=prompt("Name?")//$("#userName").val();
 	$('#newMessage').bind("enterKey",function(e){
 		//do stuff here
 		insertMessage();
@@ -85,4 +86,54 @@ $(function() {
 	});
 
 
+	
+	
+	
+$(".convoName").click(function() {
+  $(".messageAreaWrapper").slideToggle();
+});
+
+$(".btnOff").click(function() {
+  if($(".chatnav").hasClass("darker"))
+    {
+        $(".chatnav").removeClass("darker");
+    }
+	else
+    {
+        $(".chatnav").addClass("darker");
+    }
+});
+
+$(".btnClose").click(function() {
+  $(".messageAreaWrapper").slideToggle();
+ });
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 });

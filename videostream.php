@@ -16,7 +16,8 @@
 			<div class='row'>
 				<div class ='col-md-8'>
 					<video width="100%" autoplay controls>
-						<source src="http://192.168.1.112:8080?t=1923801925" type='video/ogg' / >
+					<?php 
+						echo "<source  src='http://192.168.1.112:8080?t=".time()."'  type='video/ogg' / >";?>
 						
 						Your browser does not support the video tag.
 					</video> 
