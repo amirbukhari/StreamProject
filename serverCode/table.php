@@ -32,18 +32,7 @@ while($row = $result->fetch_array())
 }
 
 
-/*$test=count($messages)."";
-for($i=0;$i<count($messages);++$i)
-{
-	$details = $messages[$i];
-	$test.=$details[0].' '.$details[1].' '.'<br>';
-	
-}*/
-
-
 $table.="</div>";
-
-
 
 return  $table;
 ?>

@@ -14,7 +14,7 @@
 set_time_limit(0);
 // where does the data come from ? In real world this would be a SQL query or something
 
-$data_source_file = require "../serverCode/table.php";
+$data_source_file = require "table.php";
 // main loop
 while (true) {
     // if ajax request has send a timestamp, then $last_ajax_call = timestamp, else $last_ajax_call = null
@@ -37,7 +37,7 @@ while (true) {
     // if no timestamp delivered via ajax or data.txt has been changed SINCE last ajax timestamp
     if ($last_ajax_call == null || $last_change_in_data_file > $last_ajax_call) {
         // get content of data.txt
-        $data = require "../serverCode/table.php";
+        $data = require "table.php";
         // put data.txt's content and timestamp of last data.txt change into array
         $result = array(
             'data_from_file' => $data,
