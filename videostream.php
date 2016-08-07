@@ -1,4 +1,8 @@
+
 <!DOCTYPE html>
+<?php
+	include('session.php');
+?>
 <html>
 	
 	<head>
@@ -12,26 +16,45 @@
 	
 	<body>
 		
-		<div class='container' style="margin-top:3em">
+		<div class='container-fluid' style="margin-top:3em">
 			<div class='row'>
-				<div class ='col-md-8'>
+				<div class ='col-md-9'>
 					<video width="100%" autoplay controls>
 					<?php 
+						echo "<source  src='http://192.168.1.112:8080?t=".time()."'  type='video/mp4' / >";
+						echo "<source  src='http://192.168.1.112:8080?t=".time()."'  type='video/webm' / >";
 						echo "<source  src='http://192.168.1.112:8080?t=".time()."'  type='video/ogg' / >";?>
 						
 						Your browser does not support the video tag.
 					</video> 
 				</div>
-			<!--	<div class ='col-md-5'>
-					<input id="userName" type='textbox' placeholder='Name'>
-					<div id='table'>
+				<input id='userName' style="display:none" value=<?php echo "'".$login_session."'"; ?> />
+					<!--<embed src="stream.asx">  -->
+				<div class ='col-md-3'>
+					<div class="chatbox">
+				<div class="chatnav">
+					<div class="convoName">
+						<p>Convo</p>
 					</div>
-					<input id='newMessage' name='newMessage' type='textbox'>
-			-->
+					<button class="btnClose" type="button" class="btn btn-default btn-xs">
+						<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+					</button>
+					<button class="btnOff" type="button" class="btn btn-default btn-xs">
+						<span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+					</button>
+				</div>
+				<div class="messageAreaWrapper">
+					<div class="messageArea" id="table">
+					</div>
+					<textarea  rows="1" id='newMessage' name='newMessage'></textarea>
+				</div>
+			</div>
+			
 				</div>
 			</div>
 		</div>
-		<div id="push">
+		
+		<!--<div id="push">
 			<div class="chatbox">
 				<div class="chatnav">
 					<div class="convoName">
@@ -50,7 +73,7 @@
 					<textarea  rows="1" id='newMessage' name='newMessage'></textarea>
 				</div>
 			</div>
-		</div>
+		</div>-->
 		
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
