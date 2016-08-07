@@ -15,7 +15,7 @@ function getContent(timestamp)
     $.ajax(
         {
             type: 'GET',
-            url: 'http://127.0.0.1/ChatProgram/server/server.php',
+            url: 'http://127.0.0.1/serverCode/server.php',
             data: queryString,
             success: function(data){
                 // put result data into "obj"

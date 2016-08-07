@@ -16,6 +16,4 @@ else
 	echo "Show not successfully added";
 }
 
-
-			
 ?>
