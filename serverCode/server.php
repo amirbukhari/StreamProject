@@ -23,7 +23,7 @@ while (true) {
     clearstatcache();
     // get timestamp of when file has been changed the last time
 	
-	$sql="SELECT MAX(messageDate) AS lastMessageDate FROM MESSAGES WHERE roomID = 1";
+	$sql="select max(messageDate) as lastMessageDate from messages where roomID = 1";
 	$SQLresult=$mysqli->query($sql);
 
 	while($row = $SQLresult->fetch_array()) 

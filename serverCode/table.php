@@ -1,6 +1,6 @@
 <?php
 require "connect.php";
-$sql="(SELECT * FROM MESSAGES WHERE roomID = 1 ORDER BY messageID DESC LIMIT 10) ORDER BY messageID ASC";
+$sql="(select * from messages where roomID = 1 order by messageID desc limit 10) order by messageID asc";
 $result=$mysqli->query($sql);
 
 

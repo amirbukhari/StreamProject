@@ -8,7 +8,7 @@
 		$myusername = mysqli_real_escape_string($mysqli,$_POST['username']);
 		$mypassword = mysqli_real_escape_string($mysqli,$_POST['password']); 
 		
-		$sql = "SELECT id FROM members WHERE username = '$myusername' and password = '$mypassword'";
+		$sql = "select id from members where username = '$myusername' and password = '$mypassword'";
 		$result = mysqli_query($mysqli,$sql);
 		$row = mysqli_fetch_array($result,MYSQLI_ASSOC);
 		// $active = $row['active'];
